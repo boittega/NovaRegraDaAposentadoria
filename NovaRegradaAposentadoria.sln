@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaRegradaAposentadoria", "NovaRegradaAposentadoria\NovaRegradaAposentadoria.csproj", "{706FF0DC-DE1B-4710-B92D-B2DA988265ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D65D77EF-901A-4440-8D1A-B256DC29A648}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{2F00B6EB-E8EA-4D12-8B81-B9B5CCFEE450}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\NovaRegradaAposentadoria-WAWS-dev.json = PublishScripts\Configurations\NovaRegradaAposentadoria-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{706FF0DC-DE1B-4710-B92D-B2DA988265ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706FF0DC-DE1B-4710-B92D-B2DA988265ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706FF0DC-DE1B-4710-B92D-B2DA988265ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706FF0DC-DE1B-4710-B92D-B2DA988265ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F00B6EB-E8EA-4D12-8B81-B9B5CCFEE450} = {D65D77EF-901A-4440-8D1A-B256DC29A648}
+	EndGlobalSection
+EndGlobal

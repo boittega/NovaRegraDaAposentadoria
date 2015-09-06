@@ -1,0 +1,32 @@
+﻿@model NovaRegradaAposentadoria.Models.Resultado
+
+<div class="row text-center resultviewtop">
+    <div class="col-xs-6">
+        <h2>
+            <i class="fa fa-clock-o"></i> Opção com a menor contribuição
+        </h2>
+    </div>
+    <div class="col-xs-6">
+        <h2>
+            <i class="fa fa-clock-o"></i> Opção com a menor idade
+        </h2>
+    </div>
+</div>
+<div class="row text-center resultviewbottom">
+    <div class="col-xs-6">
+        <h3>
+            Você se aposentará daqui <strong>@Model.IdadeOp1</strong> anos.
+        </h3>
+        <h3>
+            Contribuindo mais <strong>@Model.TempoOp1</strong> anos.
+        </h3>
+    </div>
+    <div class="col-xs-6">
+        <h3>
+            Você se aposentará daqui <strong>@Model.IdadeOp2</strong> anos.
+        </h3>
+        <h3>
+            Contribuindo mais <strong>@Model.TempoOp2</strong> anos.
+        </h3>
+    </div>
+</div>

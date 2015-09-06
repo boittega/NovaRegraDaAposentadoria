@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript">
+
+    function EnviaAJAX(valor) {
+        $.ajax({
+            url: "/Home/AbreCalculo",
+            data: { sexo : valor },
+            success: function (result) {
+                $("#Calculo").html(result);
+                $("#CalculadoraForm").removeData("validator");
+                $("#CalculadoraForm").removeData("unobtrusiveValidation");
+                $.validator.unobtrusive.parse("#CalculadoraForm");
+                $("#CalculadoraForm").find("input[type=number]").val("");
+                $("#Retorno").html("");
+            }
+        });
+    }
+</script>
+
+<section>
+    <div class="row">
+        <div class="col-xs-12 text-center ">
+            <div class="col-xs-6">
+                <button id="Homem" class="btn btn-lg btn-block" onclick="EnviaAJAX('H')"><span class="fa fa-male"></span> Homem</button>
+            </div>
+            <div class="col-xs-6">
+                <button id="Mulher" class="btn btn-lg btn-block" onclick="EnviaAJAX('M')"><span class="fa fa-female"></span> Mulher</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Calculo">
+    
+</section>
+
+<section>
+    <div id="Retorno">
+
+    </div>
+</section>
